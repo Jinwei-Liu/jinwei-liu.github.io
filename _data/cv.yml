@@ -17,7 +17,7 @@ cv:
         end_date: present
         location: Shanghai, China
         highlights:
-          - Research focus: human-robot shared autonomy
+          - "Research focus: human-robot shared autonomy"
 
     Research Interests:
       - bullet: Human-robot shared autonomy
