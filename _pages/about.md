@@ -6,10 +6,11 @@ subtitle: <a href="https://en.ustc.edu.cn/" target="_blank">University of Scienc
 
 profile:
   align: right
+  image: prof_pic.jpg
   image_circular: false
   more_info: >
     <p>Jinwei Liu</p>
-    <p>M.Sc. Student in Artificial Intelligence</p>
+    <p>M.Eng. Student in Artificial Intelligence</p>
     <p>University of Science and Technology of China</p>
     <p><a href="mailto:liujinweishandong@outlook.com">liujinweishandong@outlook.com</a></p>
 
@@ -23,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-I am currently pursuing an M.Sc. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on human-machine hybrid intelligence, human-robot interaction, and shared autonomy, with an emphasis on enabling machines to infer user intent in real time and support safe, natural collaboration.
+I am currently pursuing an M.Eng. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on human-machine hybrid intelligence, human-robot interaction, and shared autonomy, with an emphasis on enabling machines to infer user intent in real time and support safe, natural collaboration.
 
 More specifically, I am interested in both directions of interaction: how human intent is communicated to the machine, and how the machine expresses its internal beliefs, uncertainty, or assistance strategy back to the user.
 
@@ -31,7 +32,7 @@ More specifically, I am interested in both directions of interaction: how human 
 
 ### University of Science and Technology of China
 
-- M.Sc. in Artificial Intelligence, Sep 2024 - Present
+- M.Eng. in Artificial Intelligence, Sep 2024 - Present
 - Weighted average: `91.09`
 - GPA: `3.99/4.3`
 

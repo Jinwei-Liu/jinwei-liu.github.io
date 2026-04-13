@@ -1,6 +1,6 @@
 cv:
   name: Jinwei Liu
-  headline: M.Sc. Student in Human-Robot Shared Autonomy
+  headline: M.Eng. Student in Human-Robot Shared Autonomy
   location: Hefei, China
   email: liujinweishandong@outlook.com
   website: https://jinwei-liu.github.io
@@ -11,13 +11,13 @@ cv:
   sections:
     Profile:
       - bullet: Research interests include human-machine hybrid intelligence, human-robot interaction, and shared autonomy.
-      - bullet: Current work focuses on shared control, teleoperation, reinforcement learning, and user study design.
+      - bullet: Current work focuses on shared control, teleoperation, and reinforcement learning.
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
 
     Education:
       - institution: University of Science and Technology of China
         area: Artificial Intelligence
-        degree: Master of Science
+        degree: Master of Engineering
         start_date: 2024-09
         end_date: present
         location: Hefei, China
