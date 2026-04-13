@@ -1,31 +1,37 @@
 cv:
-  name: Kenway
-  headline: Master's student in human-robot shared autonomy
-  location: Shanghai, China
-  email: your_email@example.com
-  website: https://kenway.github.io
+  name: Jinwei Liu
+  headline: M.Sc. Student in Human-Robot Shared Autonomy
+  location: Hefei, China
+  email: liujinweishandong@outlook.com
+  website: https://jinwei-liu.github.io
   social_networks:
     - network: GitHub
-      username: kenway
+      username: Jinwei-Liu
 
   sections:
+    Profile:
+      - bullet: Research interests include human-machine hybrid intelligence, human-robot interaction, and shared autonomy.
+      - bullet: Current work focuses on shared control, teleoperation, reinforcement learning, and user study design.
+      - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
+
     Education:
-      - institution: Your University
-        area: Human-Robot Interaction / Shared Autonomy
-        degree: Master's Student
-        start_date: 2023-09
+      - institution: University of Science and Technology of China
+        area: Artificial Intelligence
+        degree: Master of Science
+        start_date: 2024-09
         end_date: present
-        location: Shanghai, China
+        location: Hefei, China
         highlights:
-          - "Research focus: human-robot shared autonomy"
-
-    Research Interests:
-      - bullet: Human-robot shared autonomy
-      - bullet: Human-in-the-loop autonomy
-      - bullet: Assistive robotics
-
-    Technical Focus:
-      - label: Methods
-        details: Robot learning, shared control, multimodal interaction
-      - label: Application Areas
-        details: Assistive robotics, human-robot interaction, embodied AI
+          - "Weighted average: 91.09; GPA: 3.99/4.3"
+          - "Honors: First-Class Academic Scholarship; Outstanding Communist Party Member (twice)"
+          - "Selected coursework: Real and Functional Analysis (95), Image Measurement Technology (95), Adaptive Control (93)"
+      - institution: Ocean University of China
+        area: Automation
+        degree: Bachelor of Engineering
+        start_date: 2020-09
+        end_date: 2024-06
+        location: Qingdao, China
+        highlights:
+          - "Rank: 1/89; Weighted average: 92.42; GPA: 3.79/4.0"
+          - "Honors: National Scholarship (twice); First-Class University Scholarship (three times); Bank of China Academic Star Scholarship"
+          - "Additional distinctions: Outstanding Graduate of Shandong Province; Honorary Bachelor's Degree of Ocean University of China"
