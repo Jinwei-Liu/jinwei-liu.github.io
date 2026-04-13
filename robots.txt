@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kenway.github.io/sitemap.xml
+Sitemap: https://jinwei-liu.github.io/sitemap.xml
