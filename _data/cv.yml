@@ -23,8 +23,6 @@ cv:
         location: Hefei, China
         highlights:
           - "Weighted average: 91.09; GPA: 3.99/4.3"
-          - "Honors: First-Class Academic Scholarship; Outstanding Communist Party Member (twice)"
-          - "Selected coursework: Real and Functional Analysis (95), Image Measurement Technology (95), Adaptive Control (93)"
       - institution: Ocean University of China
         area: Automation
         degree: Bachelor of Engineering
@@ -33,5 +31,4 @@ cv:
         location: Qingdao, China
         highlights:
           - "Rank: 1/89; Weighted average: 92.42; GPA: 3.79/4.0"
-          - "Honors: National Scholarship (twice); First-Class University Scholarship (three times); Bank of China Academic Star Scholarship"
-          - "Additional distinctions: Outstanding Graduate of Shandong Province; Honorary Bachelor's Degree of Ocean University of China"
+          - "Honors: National Scholarship (twice); Honorary Bachelor's Degree of Ocean University of China"
