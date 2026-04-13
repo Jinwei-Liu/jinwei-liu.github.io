@@ -6,7 +6,7 @@ subtitle: <a href="https://en.ustc.edu.cn/" target="_blank">University of Scienc
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: logo.jpg
   image_circular: false
   more_info: >
     <p>Jinwei Liu</p>
