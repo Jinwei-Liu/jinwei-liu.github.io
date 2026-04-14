@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China</a>. Hefei, China. Human-Robot Shared Autonomy.
+subtitle: <a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China</a>. Hefei, China. Hybrid Intelligence and Shared Autonomy in Human-Machine, Human-Robot, and Human-AI Systems.
 
 profile:
   align: right
@@ -24,9 +24,9 @@ latest_posts:
   enabled: false
 ---
 
-I am currently pursuing an M.Eng. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on human-machine hybrid intelligence, human-robot interaction, and shared autonomy, with an emphasis on enabling machines to infer user intent in real time and support safe, natural collaboration.
+I am currently pursuing an M.Eng. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
 
-More specifically, I am interested in both directions of interaction: how human intent is communicated to the machine, and how the machine expresses its internal beliefs, uncertainty, or assistance strategy back to the user.
+More specifically, I am interested in both directions of interaction: how human intent, preferences, and control objectives are communicated to intelligent systems, and how these systems express their internal beliefs, uncertainty, and assistance strategies back to the user. My work spans shared control, teleoperation, reinforcement learning, and interactive intelligent systems.
 
 ## Education
 
