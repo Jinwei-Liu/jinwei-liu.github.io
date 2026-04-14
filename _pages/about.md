@@ -14,7 +14,7 @@ profile:
     <p>University of Science and Technology of China</p>
     <p><a href="mailto:liujinweishandong@outlook.com">liujinweishandong@outlook.com</a></p>
 
-selected_papers: false
+selected_papers: true
 social: true
 
 announcements:
@@ -27,14 +27,6 @@ latest_posts:
 I am currently pursuing an M.Eng. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on human-machine hybrid intelligence, human-robot interaction, and shared autonomy, with an emphasis on enabling machines to infer user intent in real time and support safe, natural collaboration.
 
 More specifically, I am interested in both directions of interaction: how human intent is communicated to the machine, and how the machine expresses its internal beliefs, uncertainty, or assistance strategy back to the user.
-
-## Representative Figure
-
-A representative figure from my accepted IFAC World Congress paper on human-AI shared control.
-
-<div style="max-width: 52%; margin: 0 0 1.25rem 0;">
-  {% include figure.liquid path="assets/img/mkns_ifac_wc.png" class="img-fluid z-depth-1 rounded" alt="Representative figure from the MKNS IFAC World Congress paper" %}
-</div>
 
 ## Education
 
