@@ -32,3 +32,15 @@ cv:
         highlights:
           - "Rank: 1/89; Weighted average: 92.42; GPA: 3.79/4.0"
           - "Honors: National Scholarship (twice); Honorary Bachelor's Degree of Ocean University of China"
+
+    Publications:
+      - title: Human-AI Shared Control via Motor Knowledge Neuron Stimulation
+        authors:
+          - Jinwei Liu
+          - Pengfei Li
+          - Sibin Huang
+          - Yun-Bo Zhao
+          - Yu Kang
+        publisher: IFAC World Congress 2026
+        date: 2026
+        summary: Accepted paper on human-AI shared control through distributed motor knowledge neuron assemblies.
