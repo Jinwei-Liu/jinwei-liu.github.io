@@ -41,6 +41,6 @@ More specifically, I am interested in both directions of interaction: how human 
 - B.Eng. in Automation, Sep 2020 - Jun 2024
 - Rank: `1/89`
 - Weighted average: `92.42`
-- GPA: `3.79/4.0`
+- GPA: `3.82/4.0`
 - National Scholarship (twice)
 - Honorary Bachelor's Degree of Ocean University of China
