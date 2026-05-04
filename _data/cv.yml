@@ -41,7 +41,6 @@ cv:
           - Qianqian Zhang
         publisher: International Conference on Guidance, Navigation and Control (ICGNC) 2026
         date: 2026
-        preview: lstm_mpc_icgnc.png
         summary: Accepted paper on physically feasible and interpretable trajectory prediction via latent MPC parameter estimation.
       - title: Human-AI Shared Control via Motor Knowledge Neuron Stimulation
         authors:
@@ -52,5 +51,4 @@ cv:
           - Yu Kang
         publisher: IFAC World Congress 2026
         date: 2026
-        preview: mkns_ifac_wc.png
         summary: Accepted paper on human-AI shared control through distributed motor knowledge neuron assemblies.
