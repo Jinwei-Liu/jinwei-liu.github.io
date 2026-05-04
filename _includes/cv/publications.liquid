@@ -39,6 +39,10 @@
               </h6>
             {% endif %}
 
+            {% if entry.authors %}
+              <p class="ml-1 ml-md-4 mb-1">{{ entry.authors | join: ', ' }}</p>
+            {% endif %}
+
             {% if entry.summary %}
               <p class="ml-1 ml-md-4">{{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
@@ -57,6 +61,10 @@
               <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
                 <em>{{ entry.publisher }}</em>
               </h6>
+            {% endif %}
+
+            {% if entry.authors %}
+              <p class="ml-1 ml-md-4 mb-1">{{ entry.authors | join: ', ' }}</p>
             {% endif %}
 
             {% if entry.summary %}

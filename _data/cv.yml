@@ -34,6 +34,14 @@ cv:
           - "Honors: National Scholarship (twice); Honorary Bachelor's Degree of Ocean University of China"
 
     Publications:
+      - title: "LSTM-MPC: Physically Feasible and Interpretable Trajectory Prediction"
+        authors:
+          - Jinwei Liu
+          - Pengfei Li
+          - Qianqian Zhang
+        publisher: International Conference on Guidance, Navigation and Control (ICGNC) 2026
+        date: 2026
+        summary: Accepted paper on physically feasible and interpretable trajectory prediction via latent MPC parameter estimation.
       - title: Human-AI Shared Control via Motor Knowledge Neuron Stimulation
         authors:
           - Jinwei Liu
