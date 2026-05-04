@@ -28,18 +28,6 @@ function addLeafletTileLayer(map, mapElement) {
   tileLayer.addTo(map);
 }
 
-function escapeHtml(value) {
-  return String(value ?? "").replace(/[&<>"']/g, (character) => {
-    return {
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;",
-    }[character];
-  });
-}
-
 function setupGeoJsonMaps() {
   document.querySelectorAll("pre>code.language-geojson").forEach((elem) => {
     if (elem.dataset.leafletProcessed === "true" || !leafletIsAvailable()) {
@@ -76,75 +64,8 @@ function setupGeoJsonMaps() {
   });
 }
 
-function setupEducationMaps() {
-  document.querySelectorAll(".cv-education-map").forEach((mapElement) => {
-    if (mapElement.dataset.leafletProcessed === "true") {
-      return;
-    }
-
-    const markerElements = Array.from(mapElement.querySelectorAll(".cv-education-map-marker"));
-    const markers = markerElements
-      .map((markerElement) => {
-        return {
-          name: markerElement.dataset.name,
-          degree: markerElement.dataset.degree,
-          location: markerElement.dataset.location,
-          latitude: Number(markerElement.dataset.latitude),
-          longitude: Number(markerElement.dataset.longitude),
-        };
-      })
-      .filter((marker) => Number.isFinite(marker.latitude) && Number.isFinite(marker.longitude));
-
-    if (!markers.length) {
-      return;
-    }
-
-    if (!leafletIsAvailable()) {
-      mapElement.classList.add("map-unavailable");
-      return;
-    }
-
-    mapElement.dataset.leafletProcessed = "true";
-    mapElement.replaceChildren();
-
-    const map = window.L.map(mapElement, {
-      scrollWheelZoom: false,
-    });
-    addLeafletTileLayer(map, mapElement);
-
-    const markerIcon = window.L.divIcon({
-      className: "cv-education-pin",
-      iconSize: [18, 18],
-      iconAnchor: [9, 9],
-      popupAnchor: [0, -10],
-    });
-    const bounds = window.L.latLngBounds();
-
-    markers.forEach((marker) => {
-      const latLng = [marker.latitude, marker.longitude];
-      const popupContent = [
-        `<strong>${escapeHtml(marker.name)}</strong>`,
-        marker.degree ? `<div>${escapeHtml(marker.degree)}</div>` : "",
-        marker.location ? `<div class="cv-education-popup-location">${escapeHtml(marker.location)}</div>` : "",
-      ].join("");
-
-      window.L.marker(latLng, { icon: markerIcon }).addTo(map).bindPopup(popupContent);
-      bounds.extend(latLng);
-    });
-
-    if (markers.length === 1) {
-      map.setView(bounds.getCenter(), 12);
-    } else {
-      map.fitBounds(bounds.pad(0.25));
-    }
-
-    window.setTimeout(() => map.invalidateSize(), 0);
-  });
-}
-
 function setupLeafletMaps() {
   setupGeoJsonMaps();
-  setupEducationMaps();
 }
 
 if (document.readyState === "loading") {
