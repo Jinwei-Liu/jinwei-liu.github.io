@@ -8,6 +8,8 @@ _site
 .sass-cache
 .tweet-cache
 .venv
+__pycache__/
+*.py[cod]
 assets/libs/
 assets/rendercv/rendercv_output/*.typ
 Gemfile.lock

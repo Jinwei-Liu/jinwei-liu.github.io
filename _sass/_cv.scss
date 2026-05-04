@@ -86,68 +86,106 @@ div.container-links {
  * CV MAP styles
  *****************************/
 
-.cv-education-map {
+.cv-education-static-map {
   position: relative;
-  height: 340px;
-  min-height: 280px;
+  height: 320px;
+  min-height: 260px;
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
   border-radius: 0.25rem;
-  background: #e8eef2;
+  background-color: #e8eef2;
+  background-image:
+    radial-gradient(circle at 74% 51%, rgba(38, 115, 191, 0.22), transparent 28%), linear-gradient(rgba(31, 78, 121, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31, 78, 121, 0.08) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    40px 40px,
+    40px 40px;
 }
 
-.cv-education-map-fallback {
+.cv-education-static-map-art {
+  position: absolute;
+  inset: 6% 5%;
+  width: 90%;
+  height: 88%;
+  filter: drop-shadow(0 8px 16px rgba(31, 78, 121, 0.16));
+}
+
+.cv-education-static-sea {
+  fill: #e8f3f8;
+}
+
+.cv-education-static-land {
+  fill: #d5e7cf;
+  stroke: #2f6fbd;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+
+.cv-education-static-coast,
+.cv-education-static-river,
+.cv-education-static-inner,
+.cv-education-static-route {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.cv-education-static-inner {
+  stroke: rgba(64, 104, 73, 0.24);
+  stroke-width: 0.8;
+}
+
+.cv-education-static-coast,
+.cv-education-static-river {
+  stroke: rgba(47, 111, 189, 0.58);
+  stroke-width: 0.9;
+}
+
+.cv-education-static-route {
+  stroke: #bf3f35;
+  stroke-dasharray: 2 3;
+  stroke-width: 1.2;
+}
+
+.cv-education-static-city-dot {
+  fill: #bf3f35;
+  stroke: #fff;
+  stroke-width: 0.7;
+}
+
+.cv-education-static-island {
+  fill: #d5e7cf;
+  stroke: #2f6fbd;
+  stroke-width: 0.7;
+}
+
+.cv-education-static-markers {
+  position: absolute;
+  inset: 6% 5%;
+}
+
+.cv-education-static-marker {
+  position: absolute;
+  top: var(--map-y);
+  left: var(--map-x);
   display: flex;
-  height: 100%;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-
-  ul {
-    width: min(100%, 28rem);
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  li {
-    display: flex;
-    gap: 1rem;
-    align-items: baseline;
-    justify-content: space-between;
-    padding: 0.45rem 0;
-    border-bottom: 1px solid var(--global-divider-color);
-  }
-
-  li:last-child {
-    border-bottom: 0;
-  }
-
-  span {
-    font-weight: 600;
-  }
-
-  small {
-    color: var(--global-text-color-light);
-    white-space: nowrap;
-  }
+  gap: 0.45rem;
+  transform: translate(-9px, -50%);
 }
 
-.cv-education-map.map-tiles-unavailable .leaflet-tile-pane {
-  opacity: 0.08;
-}
-
-.cv-education-map-pin {
+.cv-education-static-pin {
   position: relative;
   width: 18px;
   height: 18px;
+  flex: 0 0 auto;
   border: 2px solid var(--global-card-bg-color);
   border-radius: 50%;
   background: var(--global-theme-color);
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.16);
 }
 
-.cv-education-map-pin::after {
+.cv-education-static-pin::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -159,19 +197,45 @@ div.container-links {
   transform: translate(-50%, -50%);
 }
 
-.cv-education-popup-location {
-  margin-top: 0.15rem;
+.cv-education-static-label {
+  display: grid;
+  gap: 0.05rem;
+  min-width: 5.4rem;
+  padding: 0.35rem 0.45rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+  background: var(--global-card-bg-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  line-height: 1.1;
+}
+
+.cv-education-static-label strong {
+  font-size: 0.75rem;
+}
+
+.cv-education-static-label small,
+.cv-education-static-label em {
   color: var(--global-text-color-light);
+  font-size: 0.65rem;
+  font-style: normal;
 }
 
 @media (max-width: 576px) {
-  .cv-education-map {
-    height: 280px;
-    min-height: 240px;
+  .cv-education-static-map {
+    height: 250px;
+    min-height: 220px;
   }
 
-  .cv-education-map-fallback li {
-    display: block;
+  .cv-education-static-map-art,
+  .cv-education-static-markers {
+    inset: 9% 4%;
+    width: 92%;
+    height: 82%;
+  }
+
+  .cv-education-static-label {
+    min-width: 4.4rem;
+    padding: 0.3rem 0.4rem;
   }
 }
 
