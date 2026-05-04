@@ -25,23 +25,33 @@ class CvEducationMapTests(unittest.TestCase):
         template = read_text("_includes/cv/education.liquid")
 
         self.assertIn("cv-education-static-map", template)
-        self.assertIn("cv-education-static-map-art", template)
+        self.assertIn("cv-education-static-map-canvas", template)
         self.assertIn("cv-education-static-marker", template)
         self.assertIn("site.data.education_locations[entry.institution]", template)
+        self.assertIn("{% include cv/china_education_map.svg %}", template)
         self.assertIn('aria-label="Education locations in China"', template)
 
         self.assertNotIn("cv-education-map-marker", template)
         self.assertNotIn("data-latitude", template)
         self.assertNotIn("data-longitude", template)
 
+    def test_static_map_uses_real_vector_data(self):
+        map_svg = read_text("_includes/cv/china_education_map.svg")
+
+        self.assertIn("Generated from Natural Earth", map_svg)
+        self.assertIn("cv-education-static-province", map_svg)
+        self.assertIn("cv-education-static-route", map_svg)
+        self.assertGreaterEqual(map_svg.count('class="cv-education-static-province"'), 25)
+
     def test_static_map_styles_are_present(self):
         styles = read_text("_sass/_cv.scss")
 
         for selector in [
             ".cv-education-static-map",
+            ".cv-education-static-map-canvas",
             ".cv-education-static-map-art",
             ".cv-education-static-sea",
-            ".cv-education-static-land",
+            ".cv-education-static-province",
             ".cv-education-static-city-dot",
             ".cv-education-static-marker",
             ".cv-education-static-pin",
