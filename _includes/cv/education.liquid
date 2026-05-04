@@ -7,8 +7,9 @@
 
 {% capture education_map_fallback %}
   {% for entry in entries %}
-    {% assign latitude = entry.latitude | default: entry.lat %}
-    {% assign longitude = entry.longitude | default: entry.lng | default: entry.lon %}
+    {% assign education_location = site.data.education_locations[entry.institution] %}
+    {% assign latitude = entry.latitude | default: entry.lat | default: education_location.latitude %}
+    {% assign longitude = entry.longitude | default: entry.lng | default: entry.lon | default: education_location.longitude %}
     {% if entry.coordinates %}
       {% assign latitude = latitude | default: entry.coordinates.latitude | default: entry.coordinates.lat %}
       {% assign longitude = longitude | default: entry.coordinates.longitude | default: entry.coordinates.lng | default: entry.coordinates.lon %}
@@ -26,8 +27,9 @@
 
 {% capture education_map_markers %}
   {% for entry in entries %}
-    {% assign latitude = entry.latitude | default: entry.lat %}
-    {% assign longitude = entry.longitude | default: entry.lng | default: entry.lon %}
+    {% assign education_location = site.data.education_locations[entry.institution] %}
+    {% assign latitude = entry.latitude | default: entry.lat | default: education_location.latitude %}
+    {% assign longitude = entry.longitude | default: entry.lng | default: entry.lon | default: education_location.longitude %}
     {% if entry.coordinates %}
       {% assign latitude = latitude | default: entry.coordinates.latitude | default: entry.coordinates.lat %}
       {% assign longitude = longitude | default: entry.coordinates.longitude | default: entry.coordinates.lng | default: entry.coordinates.lon %}

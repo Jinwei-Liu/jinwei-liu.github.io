@@ -21,8 +21,6 @@ cv:
         start_date: 2024-09
         end_date: present
         location: Hefei, China
-        latitude: 31.841667
-        longitude: 117.258889
         highlights:
           - "Weighted average: 91.09; GPA: 3.99/4.3"
       - institution: Ocean University of China
@@ -31,8 +29,6 @@ cv:
         start_date: 2020-09
         end_date: 2024-06
         location: Qingdao, China
-        latitude: 36.065
-        longitude: 120.3325
         highlights:
           - "Rank: 1/89; Weighted average: 92.42; GPA: 3.82/4.0"
           - "Honors: National Scholarship (twice); Honorary Bachelor's Degree of Ocean University of China"
