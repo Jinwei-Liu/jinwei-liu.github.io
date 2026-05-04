@@ -9,6 +9,10 @@
         {% capture pub_date %}
           {% if entry.releaseDate %}{{ entry.releaseDate }}{% elsif entry.date %}{{ entry.date }}{% endif %}
         {% endcapture %}
+        {% assign has_preview = false %}
+        {% if entry.preview %}
+          {% assign has_preview = true %}
+        {% endif %}
 
         {% if pub_date != '' %}
           <div class="col-xs-2 col-sm-2 col-md-2 text-center">
@@ -24,7 +28,26 @@
               </tbody>
             </table>
           </div>
-          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          {% if has_preview %}
+            <div class="col-xs-12 col-sm-3 col-md-3 mt-2 mt-md-0">
+              {% if entry.preview contains '://' %}
+                <img
+                  class="img-fluid rounded z-depth-1"
+                  src="{{ entry.preview }}"
+                  alt="{{ entry.title | default: entry.name }}"
+                  style="width: 100%; max-height: 120px; object-fit: contain; background: var(--global-card-bg-color);"
+                >
+              {% else %}
+                <img
+                  class="img-fluid rounded z-depth-1"
+                  src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+                  alt="{{ entry.title | default: entry.name }}"
+                  style="width: 100%; max-height: 120px; object-fit: contain; background: var(--global-card-bg-color);"
+                >
+              {% endif %}
+            </div>
+          {% endif %}
+          <div class="{% if has_preview %}col-xs-10 col-sm-7 col-md-7{% else %}col-xs-10 col-sm-10 col-md-10{% endif %} mt-2 mt-md-0">
             {% if entry.url %}
               <h6 class="title font-weight-bold ml-1 ml-md-4">
                 <a href="{{ entry.url }}">{{ entry.title | default: entry.name }}</a>
@@ -48,7 +71,26 @@
             {% endif %}
           </div>
         {% else %}
-          <div class="col-xs-12 col-sm-12 col-md-12">
+          {% if has_preview %}
+            <div class="col-xs-12 col-sm-3 col-md-3 mt-2 mt-md-0">
+              {% if entry.preview contains '://' %}
+                <img
+                  class="img-fluid rounded z-depth-1"
+                  src="{{ entry.preview }}"
+                  alt="{{ entry.title | default: entry.name }}"
+                  style="width: 100%; max-height: 120px; object-fit: contain; background: var(--global-card-bg-color);"
+                >
+              {% else %}
+                <img
+                  class="img-fluid rounded z-depth-1"
+                  src="{{ entry.preview | prepend: '/assets/img/publication_preview/' | relative_url }}"
+                  alt="{{ entry.title | default: entry.name }}"
+                  style="width: 100%; max-height: 120px; object-fit: contain; background: var(--global-card-bg-color);"
+                >
+              {% endif %}
+            </div>
+          {% endif %}
+          <div class="{% if has_preview %}col-xs-12 col-sm-9 col-md-9{% else %}col-xs-12 col-sm-12 col-md-12{% endif %}">
             {% if entry.url %}
               <h6 class="title font-weight-bold ml-1 ml-md-4">
                 <a href="{{ entry.url }}">{{ entry.title | default: entry.name }}</a>
