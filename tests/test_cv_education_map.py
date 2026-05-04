@@ -24,12 +24,13 @@ class CvEducationMapTests(unittest.TestCase):
     def test_education_template_renders_static_map(self):
         template = read_text("_includes/cv/education.liquid")
 
-        self.assertIn("cv-education-static-map", template)
-        self.assertIn("cv-education-static-map-canvas", template)
-        self.assertIn("cv-education-static-marker", template)
+        self.assertIn("cv-education-mini-map", template)
+        self.assertIn("cv-education-mini-map-canvas", template)
+        self.assertIn("cv-education-mini-map-marker", template)
         self.assertIn("site.data.education_locations[entry.institution]", template)
         self.assertIn("{% include cv/china_education_map.svg %}", template)
-        self.assertIn('aria-label="Education locations in China"', template)
+        self.assertIn("fa-location-dot", template)
+        self.assertLess(template.index("table-cv"), template.index("cv-education-mini-map"))
 
         self.assertNotIn("cv-education-map-marker", template)
         self.assertNotIn("data-latitude", template)
@@ -39,27 +40,27 @@ class CvEducationMapTests(unittest.TestCase):
         map_svg = read_text("_includes/cv/china_education_map.svg")
 
         self.assertIn("Generated from Natural Earth", map_svg)
-        self.assertIn("cv-education-static-province", map_svg)
-        self.assertIn("cv-education-static-route", map_svg)
-        self.assertGreaterEqual(map_svg.count('class="cv-education-static-province"'), 25)
+        self.assertIn("Includes adm0_a3 CHN and TWN", map_svg)
+        self.assertIn("cv-education-static-region", map_svg)
+        self.assertIn("cv-education-static-region-twn", map_svg)
+        self.assertGreaterEqual(map_svg.count("cv-education-static-region"), 45)
 
     def test_static_map_styles_are_present(self):
         styles = read_text("_sass/_cv.scss")
 
         for selector in [
-            ".cv-education-static-map",
-            ".cv-education-static-map-canvas",
-            ".cv-education-static-map-art",
-            ".cv-education-static-sea",
-            ".cv-education-static-province",
-            ".cv-education-static-city-dot",
-            ".cv-education-static-marker",
-            ".cv-education-static-pin",
-            ".cv-education-static-label",
+            ".cv-education-mini-map",
+            ".cv-education-mini-map-canvas",
+            ".cv-education-mini-map-art",
+            ".cv-education-mini-map-sea",
+            ".cv-education-mini-map-marker",
+            ".cv-education-static-region",
+            ".cv-education-static-region-twn",
         ]:
             with self.subTest(selector=selector):
                 self.assertIn(selector, styles)
 
+        self.assertNotIn(".cv-education-static-map {", styles)
         self.assertNotIn(".cv-education-map.map-tiles-unavailable", styles)
 
     def test_every_education_entry_has_static_location_data(self):

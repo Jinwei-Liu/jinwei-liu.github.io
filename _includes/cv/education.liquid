@@ -5,48 +5,6 @@
   - JSONResume: institution, area, studyType, startDate, endDate, location, courses, highlights
 {% endcomment %}
 
-{% capture education_map_markers %}
-  {% for entry in entries %}
-    {% assign education_location = site.data.education_locations[entry.institution] %}
-    {% assign position_x = entry.position_x | default: education_location.position_x %}
-    {% assign position_y = entry.position_y | default: education_location.position_y %}
-    {% if position_x and position_y %}
-      {% capture map_degree %}
-        {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
-      {% endcapture %}
-      {% assign map_degree = map_degree | strip %}
-      <span
-        class="cv-education-static-marker"
-        style="--map-x: {{ position_x }}; --map-y: {{ position_y }};"
-        aria-label="{{ entry.institution | escape }}"
-      >
-        <span class="cv-education-static-pin" aria-hidden="true"></span>
-        <span class="cv-education-static-label">
-          <strong>{{ education_location.label | default: entry.institution }}</strong>
-          {% if education_location.city or entry.location %}
-            <small>{{ education_location.city | default: entry.location }}</small>
-          {% endif %}
-          {% if map_degree != '' %}
-            <em>{{ map_degree }}</em>
-          {% endif %}
-        </span>
-      </span>
-    {% endif %}
-  {% endfor %}
-{% endcapture %}
-{% assign education_map_markers = education_map_markers | strip %}
-
-{% if education_map_markers != '' %}
-  <div class="cv-education-static-map mb-3" role="img" aria-label="Education locations in China">
-    <div class="cv-education-static-map-canvas">
-      {% include cv/china_education_map.svg %}
-      <div class="cv-education-static-markers">
-        {{ education_map_markers }}
-      </div>
-    </div>
-  </div>
-{% endif %}
-
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% for entry in entries %}
     <li class="list-group-item">
@@ -67,6 +25,9 @@
           {% else %}
             {% assign date = null %}
           {% endif %}
+          {% assign education_location = site.data.education_locations[entry.institution] %}
+          {% assign position_x = entry.position_x | default: education_location.position_x %}
+          {% assign position_y = entry.position_y | default: education_location.position_y %}
 
           <table class="table-cv">
             <tbody>
@@ -79,6 +40,21 @@
               </tr>
             </tbody>
           </table>
+
+          {% if position_x and position_y %}
+            <div class="cv-education-mini-map" role="img" aria-label="{{ entry.institution | escape }} location map">
+              <div class="cv-education-mini-map-canvas">
+                {% include cv/china_education_map.svg %}
+                <span
+                  class="cv-education-mini-map-marker"
+                  style="--map-x: {{ position_x }}; --map-y: {{ position_y }};"
+                  aria-label="{{ education_location.city | default: entry.location | escape }}"
+                >
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          {% endif %}
         </div>
         <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
           {% capture study_type %}
