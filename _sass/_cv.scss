@@ -86,86 +86,68 @@ div.container-links {
  * CV MAP styles
  *****************************/
 
-.cv-education-static-map {
+.cv-education-map {
   position: relative;
-  height: 320px;
-  min-height: 260px;
+  height: 340px;
+  min-height: 280px;
   overflow: hidden;
   border: 1px solid var(--global-divider-color);
   border-radius: 0.25rem;
-  background-color: var(--global-card-bg-color);
-  background-image:
-    radial-gradient(circle at 72% 56%, rgba(0, 0, 0, 0.08), transparent 26%), linear-gradient(rgba(127, 127, 127, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(127, 127, 127, 0.1) 1px, transparent 1px);
-  background-size:
-    100% 100%,
-    40px 40px,
-    40px 40px;
+  background: #e8eef2;
 }
 
-.cv-education-static-map-art {
-  position: absolute;
-  inset: 8% 7%;
-  width: 86%;
-  height: 84%;
-}
-
-.cv-education-static-land {
-  fill: var(--global-theme-color);
-  fill-opacity: 0.12;
-  stroke: var(--global-theme-color);
-  stroke-linejoin: round;
-  stroke-opacity: 0.58;
-  stroke-width: 1.4;
-}
-
-.cv-education-static-coast,
-.cv-education-static-river,
-.cv-education-static-route {
-  fill: none;
-  stroke-linecap: round;
-}
-
-.cv-education-static-coast,
-.cv-education-static-river {
-  stroke: var(--global-text-color-light);
-  stroke-opacity: 0.42;
-  stroke-width: 0.9;
-}
-
-.cv-education-static-route {
-  stroke: var(--global-theme-color);
-  stroke-dasharray: 2 3;
-  stroke-width: 1;
-}
-
-.cv-education-static-markers {
-  position: absolute;
-  inset: 8% 7%;
-}
-
-.cv-education-static-marker {
-  position: absolute;
-  top: var(--map-y);
-  left: var(--map-x);
+.cv-education-map-fallback {
   display: flex;
-  gap: 0.45rem;
+  height: 100%;
   align-items: center;
-  transform: translate(-9px, -50%);
+  justify-content: center;
+  padding: 1rem;
+
+  ul {
+    width: min(100%, 28rem);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+
+  li:last-child {
+    border-bottom: 0;
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  small {
+    color: var(--global-text-color-light);
+    white-space: nowrap;
+  }
 }
 
-.cv-education-static-pin {
+.cv-education-map.map-tiles-unavailable .leaflet-tile-pane {
+  opacity: 0.08;
+}
+
+.cv-education-map-pin {
   position: relative;
   width: 18px;
   height: 18px;
-  flex: 0 0 auto;
   border: 2px solid var(--global-card-bg-color);
   border-radius: 50%;
   background: var(--global-theme-color);
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.16);
 }
 
-.cv-education-static-pin::after {
+.cv-education-map-pin::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -177,45 +159,19 @@ div.container-links {
   transform: translate(-50%, -50%);
 }
 
-.cv-education-static-label {
-  display: grid;
-  gap: 0.05rem;
-  min-width: 5.4rem;
-  padding: 0.35rem 0.45rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0.25rem;
-  background: var(--global-card-bg-color);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
-  line-height: 1.1;
-}
-
-.cv-education-static-label strong {
-  font-size: 0.75rem;
-}
-
-.cv-education-static-label small,
-.cv-education-static-label em {
+.cv-education-popup-location {
+  margin-top: 0.15rem;
   color: var(--global-text-color-light);
-  font-size: 0.65rem;
-  font-style: normal;
 }
 
 @media (max-width: 576px) {
-  .cv-education-static-map {
-    height: 250px;
-    min-height: 220px;
+  .cv-education-map {
+    height: 280px;
+    min-height: 240px;
   }
 
-  .cv-education-static-map-art,
-  .cv-education-static-markers {
-    inset: 11% 5%;
-    width: 90%;
-    height: 78%;
-  }
-
-  .cv-education-static-label {
-    min-width: 4.4rem;
-    padding: 0.3rem 0.4rem;
+  .cv-education-map-fallback li {
+    display: block;
   }
 }
 

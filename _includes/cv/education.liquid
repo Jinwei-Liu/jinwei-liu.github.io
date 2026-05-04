@@ -8,41 +8,50 @@
 {% capture education_map_markers %}
   {% for entry in entries %}
     {% assign education_location = site.data.education_locations[entry.institution] %}
-    {% assign position_x = entry.position_x | default: education_location.position_x %}
-    {% assign position_y = entry.position_y | default: education_location.position_y %}
-    {% if position_x and position_y %}
+    {% assign latitude = entry.latitude | default: entry.lat | default: education_location.latitude %}
+    {% assign longitude = entry.longitude | default: entry.lng | default: entry.lon | default: education_location.longitude %}
+    {% if entry.coordinates %}
+      {% assign latitude = latitude | default: entry.coordinates.latitude | default: entry.coordinates.lat %}
+      {% assign longitude = longitude | default: entry.coordinates.longitude | default: entry.coordinates.lng | default: entry.coordinates.lon %}
+    {% endif %}
+    {% if latitude and longitude %}
       {% capture map_degree %}
         {% if entry.studyType %}{{ entry.studyType }}{% elsif entry.degree %}{{ entry.degree }}{% endif %}
       {% endcapture %}
       {% assign map_degree = map_degree | strip %}
-      {% assign map_label = education_location.label | default: entry.institution %}
-      {% assign map_city = education_location.city | default: entry.location %}
-      <div class="cv-education-static-marker" style="--map-x: {{ position_x }}; --map-y: {{ position_y }};" aria-label="{{ entry.institution | escape }}">
-        <span class="cv-education-static-pin" aria-hidden="true"></span>
-        <span class="cv-education-static-label">
-          <strong>{{ map_label }}</strong>
-          {% if map_city %}
-            <small>{{ map_city }}</small>
-          {% endif %}
-          {% if map_degree != '' %}
-            <em>{{ map_degree }}</em>
-          {% endif %}
-        </span>
-      </div>
+      <span
+        class="cv-education-map-marker"
+        data-name="{{ entry.institution | escape }}"
+        data-degree="{{ map_degree | escape }}"
+        data-location="{{ entry.location | escape }}"
+        data-latitude="{{ latitude }}"
+        data-longitude="{{ longitude }}"
+      ></span>
     {% endif %}
   {% endfor %}
 {% endcapture %}
 {% assign education_map_markers = education_map_markers | strip %}
 
 {% if education_map_markers != '' %}
-  <div class="cv-education-static-map mb-3" role="img" aria-label="Education locations in China">
-    <svg class="cv-education-static-map-art" viewBox="0 0 100 64" aria-hidden="true" focusable="false">
-      <path class="cv-education-static-land" d="M17 22 24 15 33 12 43 14 52 9 63 11 72 17 82 18 89 25 84 32 88 40 80 47 75 56 64 55 56 60 45 56 34 58 25 52 19 42 11 36 15 29Z"></path>
-      <path class="cv-education-static-coast" d="M74 23 C79 28 81 33 79 38 C77 44 72 49 67 52"></path>
-      <path class="cv-education-static-river" d="M29 39 C40 37 48 42 58 40 C66 39 72 35 78 36"></path>
-      <path class="cv-education-static-route" d="M71.2 39.4 L76.2 31.9"></path>
-    </svg>
-    <div class="cv-education-static-markers">
+  <div class="cv-education-map map mb-3" role="img" aria-label="Education locations map">
+    <div class="cv-education-map-fallback">
+      <ul>
+        {% for entry in entries %}
+          {% assign education_location = site.data.education_locations[entry.institution] %}
+          {% assign latitude = entry.latitude | default: entry.lat | default: education_location.latitude %}
+          {% assign longitude = entry.longitude | default: entry.lng | default: entry.lon | default: education_location.longitude %}
+          {% if latitude and longitude %}
+            <li>
+              <span>{{ entry.institution }}</span>
+              {% if entry.location %}
+                <small>{{ entry.location }}</small>
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="cv-education-map-markers" hidden>
       {{ education_map_markers }}
     </div>
   </div>
