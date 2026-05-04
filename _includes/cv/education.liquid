@@ -38,24 +38,11 @@
 
 {% if education_map_markers != '' %}
   <div class="cv-education-static-map mb-3" role="img" aria-label="Education locations in China">
-    <svg class="cv-education-static-map-art" viewBox="0 0 100 64" aria-hidden="true" focusable="false">
-      <rect class="cv-education-static-sea" x="0" y="0" width="100" height="64" rx="5"></rect>
-      <path class="cv-education-static-land" d="M11 24 19 15 30 11 41 13 52 8 64 10 73 16 83 17 91 24 87 31 91 39 82 47 77 56 66 55 58 60 46 56 34 58 24 52 18 43 9 36 14 29Z"></path>
-      <path class="cv-education-static-inner" d="M28 13 C32 23 31 32 25 41"></path>
-      <path class="cv-education-static-inner" d="M43 14 C45 25 44 37 39 56"></path>
-      <path class="cv-education-static-inner" d="M56 10 C56 21 58 33 62 54"></path>
-      <path class="cv-education-static-inner" d="M20 29 C35 28 50 30 86 27"></path>
-      <path class="cv-education-static-inner" d="M19 43 C35 39 52 43 84 38"></path>
-      <path class="cv-education-static-coast" d="M74 20 C80 25 83 31 81 38 C79 45 73 50 66 54"></path>
-      <path class="cv-education-static-river" d="M27 39 C39 37 48 42 58 40 C67 39 74 35 80 36"></path>
-      <path class="cv-education-static-route" d="M71.2 39.4 L76.2 31.9"></path>
-      <circle class="cv-education-static-city-dot" cx="71.2" cy="39.4" r="1.4"></circle>
-      <circle class="cv-education-static-city-dot" cx="76.2" cy="31.9" r="1.4"></circle>
-      <circle class="cv-education-static-island" cx="81.5" cy="53" r="1.5"></circle>
-      <circle class="cv-education-static-island" cx="87.5" cy="46.5" r="0.9"></circle>
-    </svg>
-    <div class="cv-education-static-markers">
-      {{ education_map_markers }}
+    <div class="cv-education-static-map-canvas">
+      {% include cv/china_education_map.svg %}
+      <div class="cv-education-static-markers">
+        {{ education_map_markers }}
+      </div>
     </div>
   </div>
 {% endif %}

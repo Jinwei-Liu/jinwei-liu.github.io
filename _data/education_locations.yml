@@ -1,7 +1,7 @@
 University of Science and Technology of China:
   latitude: "31.841667"
   longitude: "117.258889"
-  position_x: "71.2%"
+  position_x: "71.4%"
   position_y: "61.6%"
   label: "USTC"
   city: "Hefei"
@@ -9,7 +9,7 @@ University of Science and Technology of China:
 Ocean University of China:
   latitude: "36.065"
   longitude: "120.3325"
-  position_x: "76.2%"
+  position_x: "76.3%"
   position_y: "49.8%"
   label: "OUC"
   city: "Qingdao"

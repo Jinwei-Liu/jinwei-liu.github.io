@@ -88,9 +88,12 @@ div.container-links {
 
 .cv-education-static-map {
   position: relative;
-  height: 320px;
+  display: flex;
   min-height: 260px;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  padding: 0.75rem;
   border: 1px solid var(--global-divider-color);
   border-radius: 0.25rem;
   background-color: #e8eef2;
@@ -103,11 +106,16 @@ div.container-links {
     40px 40px;
 }
 
+.cv-education-static-map-canvas {
+  position: relative;
+  width: min(100%, 36rem);
+  aspect-ratio: 1000 / 620;
+}
+
 .cv-education-static-map-art {
-  position: absolute;
-  inset: 6% 5%;
-  width: 90%;
-  height: 88%;
+  display: block;
+  width: 100%;
+  height: 100%;
   filter: drop-shadow(0 8px 16px rgba(31, 78, 121, 0.16));
 }
 
@@ -115,53 +123,33 @@ div.container-links {
   fill: #e8f3f8;
 }
 
-.cv-education-static-land {
+.cv-education-static-province {
   fill: #d5e7cf;
   stroke: #2f6fbd;
   stroke-linejoin: round;
-  stroke-width: 1.6;
+  stroke-width: 1.1;
+  vector-effect: non-scaling-stroke;
 }
 
-.cv-education-static-coast,
-.cv-education-static-river,
-.cv-education-static-inner,
 .cv-education-static-route {
   fill: none;
-  stroke-linecap: round;
-}
-
-.cv-education-static-inner {
-  stroke: rgba(64, 104, 73, 0.24);
-  stroke-width: 0.8;
-}
-
-.cv-education-static-coast,
-.cv-education-static-river {
-  stroke: rgba(47, 111, 189, 0.58);
-  stroke-width: 0.9;
-}
-
-.cv-education-static-route {
   stroke: #bf3f35;
-  stroke-dasharray: 2 3;
-  stroke-width: 1.2;
+  stroke-dasharray: 6 8;
+  stroke-linecap: round;
+  stroke-width: 2.8;
+  vector-effect: non-scaling-stroke;
 }
 
 .cv-education-static-city-dot {
   fill: #bf3f35;
   stroke: #fff;
-  stroke-width: 0.7;
-}
-
-.cv-education-static-island {
-  fill: #d5e7cf;
-  stroke: #2f6fbd;
-  stroke-width: 0.7;
+  stroke-width: 2.4;
+  vector-effect: non-scaling-stroke;
 }
 
 .cv-education-static-markers {
   position: absolute;
-  inset: 6% 5%;
+  inset: 0;
 }
 
 .cv-education-static-marker {
@@ -172,6 +160,11 @@ div.container-links {
   align-items: center;
   gap: 0.45rem;
   transform: translate(-9px, -50%);
+}
+
+.cv-education-static-marker:nth-child(even) {
+  flex-direction: row-reverse;
+  transform: translate(calc(-100% + 9px), -50%);
 }
 
 .cv-education-static-pin {
@@ -222,15 +215,12 @@ div.container-links {
 
 @media (max-width: 576px) {
   .cv-education-static-map {
-    height: 250px;
     min-height: 220px;
+    padding: 0.5rem;
   }
 
-  .cv-education-static-map-art,
-  .cv-education-static-markers {
-    inset: 9% 4%;
-    width: 92%;
-    height: 82%;
+  .cv-education-static-map-canvas {
+    width: 100%;
   }
 
   .cv-education-static-label {
