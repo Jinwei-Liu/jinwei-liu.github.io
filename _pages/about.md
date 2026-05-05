@@ -34,21 +34,27 @@ More specifically, I am interested in both directions of interaction: how human 
 
 <div class="research-interests">
   <div class="research-interest">
-    <i class="fa-solid fa-brain" aria-hidden="true"></i>
+    <span class="research-interest-icon">
+      <i class="fa-solid fa-brain" aria-hidden="true"></i>
+    </span>
     <div>
-      <strong>Human → Machine: Intent Understanding</strong>
+      <strong><span class="research-arrow">Human → Machine</span> Intent Understanding</strong>
       <p>User modeling, intent inference, trajectory prediction, and shared autonomy.</p>
     </div>
   </div>
   <div class="research-interest">
-    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+    <span class="research-interest-icon">
+      <i class="fa-solid fa-robot" aria-hidden="true"></i>
+    </span>
     <div>
-      <strong>Machine → Human: Legible Interaction</strong>
+      <strong><span class="research-arrow">Machine → Human</span> Legible Interaction</strong>
       <p>Robot motion legibility, implicit communication, belief expression, and agency-preserving assistance.</p>
     </div>
   </div>
   <div class="research-interest">
-    <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+    <span class="research-interest-icon">
+      <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+    </span>
     <div>
       <strong>Reinforcement Learning & Intelligent Control</strong>
       <p>Learning-based control, uncertainty-aware intervention, reinforcement learning, and MPC.</p>
