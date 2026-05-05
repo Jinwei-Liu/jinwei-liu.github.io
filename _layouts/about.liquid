@@ -65,6 +65,13 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    {% if content_parts.size > 1 %}
+      <section class="about-education">
+        <h2 id="education">Education</h2>
+        {{ content_parts[1] }}
+      </section>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
@@ -76,13 +83,6 @@ layout: default
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
       {% include newsletter.liquid center=true %}
-    {% endif %}
-
-    {% if content_parts.size > 1 %}
-      <section class="about-education">
-        <h2 id="education">Education</h2>
-        {{ content_parts[1] }}
-      </section>
     {% endif %}
   </article>
 </div>

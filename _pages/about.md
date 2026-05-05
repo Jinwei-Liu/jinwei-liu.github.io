@@ -26,8 +26,6 @@ latest_posts:
 
 I am currently pursuing an M.Eng. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
 
-More specifically, I am interested in both directions of interaction: how human intent, preferences, and control objectives are communicated to intelligent systems, and how these systems express their internal beliefs, uncertainty, and assistance strategies back to the user. My work spans shared control, teleoperation, reinforcement learning, and interactive intelligent systems.
-
 ## Research Interests
 
 **Research Mission:** Building human-centered intelligent systems that understand human intent, communicate machine behavior, and learn to collaborate safely in real-world tasks.
