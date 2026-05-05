@@ -66,13 +66,13 @@ I am currently pursuing an M.Eng. degree in Artificial Intelligence at the Unive
 
 ### University of Science and Technology of China
 
-- M.Eng. in Artificial Intelligence, Sep 2024 - Present
+- M.Eng. in Artificial Intelligence, `Sep 2024 - Present`
 - Weighted average: `91.09`
 - GPA: `3.99/4.3`
 
 ### Ocean University of China
 
-- B.Eng. in Automation, Sep 2020 - Jun 2024
+- B.Eng. in Automation, `Sep 2020 - Jun 2024`
 - Rank: `1/89`
 - Weighted average: `92.42`
 - GPA: `3.82/4.0`
