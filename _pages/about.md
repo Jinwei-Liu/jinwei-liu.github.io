@@ -28,6 +28,34 @@ I am currently pursuing an M.Eng. degree in Artificial Intelligence at the Unive
 
 More specifically, I am interested in both directions of interaction: how human intent, preferences, and control objectives are communicated to intelligent systems, and how these systems express their internal beliefs, uncertainty, and assistance strategies back to the user. My work spans shared control, teleoperation, reinforcement learning, and interactive intelligent systems.
 
+## Research Interests
+
+**Research Mission:** Building human-centered intelligent systems that understand human intent, communicate machine behavior, and learn to collaborate safely in real-world tasks.
+
+<div class="research-interests">
+  <div class="research-interest">
+    <i class="fa-solid fa-brain" aria-hidden="true"></i>
+    <div>
+      <strong>Human → Machine: Intent Understanding</strong>
+      <p>User modeling, intent inference, trajectory prediction, and shared autonomy.</p>
+    </div>
+  </div>
+  <div class="research-interest">
+    <i class="fa-solid fa-robot" aria-hidden="true"></i>
+    <div>
+      <strong>Machine → Human: Legible Interaction</strong>
+      <p>Robot motion legibility, implicit communication, belief expression, and agency-preserving assistance.</p>
+    </div>
+  </div>
+  <div class="research-interest">
+    <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
+    <div>
+      <strong>Reinforcement Learning & Intelligent Control</strong>
+      <p>Learning-based control, uncertainty-aware intervention, reinforcement learning, and MPC.</p>
+    </div>
+  </div>
+</div>
+
 ## Education
 
 ### University of Science and Technology of China
