@@ -58,6 +58,8 @@ More specifically, I am interested in both directions of interaction: how human 
 
 ## Education
 
+<!-- Education is rendered at the bottom of the homepage by the about layout. -->
+
 ### University of Science and Technology of China
 
 - M.Eng. in Artificial Intelligence, Sep 2024 - Present
