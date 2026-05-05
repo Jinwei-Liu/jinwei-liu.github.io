@@ -12,27 +12,75 @@ on:
 
 jobs:
   check:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Node.js ⚙️
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
         uses: actions/setup-node@v4
-      - name: Install Prettier 💾
+
+      - name: Install Prettier
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
-      - name: Prettier Check 🔎
+
+      - name: Collect changed files
+        run: |
+          set -euo pipefail
+
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            git fetch --no-tags --prune --depth=1 origin "${{ github.base_ref }}"
+            base="origin/${{ github.base_ref }}"
+          else
+            before="${{ github.event.before }}"
+            if [[ -z "$before" || "$before" =~ ^0+$ ]]; then
+              if git rev-parse HEAD~1 >/dev/null 2>&1; then
+                base="HEAD~1"
+              else
+                base="$(git hash-object -t tree /dev/null)"
+              fi
+            else
+              base="$before"
+            fi
+          fi
+
+          git diff --name-only --diff-filter=ACMRT "$base" HEAD \
+            | grep -E '(\.(css|html|js|json|liquid|md|mjs|cjs|scss|ts|tsx|yaml|yml)$|(^|/)\.prettierrc(\.(json|yaml|yml|js|cjs|mjs))?$)' \
+            > prettier-files.txt || true
+
+          if [[ -s prettier-files.txt ]]; then
+            echo "Prettier-supported changed files:"
+            cat prettier-files.txt
+          else
+            echo "No Prettier-supported files changed."
+          fi
+
+      - name: Prettier Check
         id: prettier
-        run: npx prettier . --check
-      - name: Create diff 📝
-        # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
+        run: |
+          set -euo pipefail
+
+          if [[ ! -s prettier-files.txt ]]; then
+            echo "No Prettier-supported files changed."
+            exit 0
+          fi
+
+          mapfile -t prettier_files < prettier-files.txt
+          npx prettier --check "${prettier_files[@]}"
+
+      - name: Create diff
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
+          set -euo pipefail
+
+          mapfile -t prettier_files < prettier-files.txt
+          npx prettier --write "${prettier_files[@]}"
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
-      - name: Upload html diff ⬆️
+
+      - name: Upload html diff
         id: artifact-upload
         if: ${{ failure() && steps.prettier.conclusion == 'failure' }}
         uses: actions/upload-artifact@v4
@@ -40,7 +88,8 @@ jobs:
           name: HTML Diff
           path: diff.html
           retention-days: 7
-      - name: Dispatch information to repository 🗣️
+
+      - name: Dispatch information to repository
         if: ${{ failure() && steps.prettier.conclusion == 'failure' && github.event_name == 'pull_request' }}
         uses: peter-evans/repository-dispatch@v2
         with:
