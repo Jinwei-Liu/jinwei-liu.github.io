@@ -6,7 +6,7 @@ subtitle: <a href="https://en.ustc.edu.cn/" target="_blank">University of Scienc
 
 profile:
   align: right
-  image: logo.jpg
+  image: img.png
   image_circular: false
   more_info: >
     <p>Jinwei Liu</p>
@@ -56,6 +56,15 @@ I am currently pursuing an M.Eng. degree in Artificial Intelligence at the Unive
     <div>
       <strong>Reinforcement Learning & Intelligent Control</strong>
       <p>Learning-based control, uncertainty-aware intervention, reinforcement learning, and MPC.</p>
+    </div>
+  </div>
+  <div class="research-interest">
+    <span class="research-interest-icon">
+      <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+    </span>
+    <div>
+      <strong>Embodied Intelligence</strong>
+      <p>Human-in-the-loop reinforcement learning for adaptive embodied agents.</p>
     </div>
   </div>
 </div>
