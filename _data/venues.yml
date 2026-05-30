@@ -11,3 +11,7 @@
 "IFAC WC":
   url: https://www.ifac2026.org/
   color: "#005f73"
+
+"IoTJ":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907
+  color: "#00629b"

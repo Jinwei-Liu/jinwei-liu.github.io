@@ -34,6 +34,18 @@ cv:
           - "Honors: National Scholarship (twice); Honorary Bachelor's Degree of Ocean University of China"
 
     Publications:
+      - title: "Delay-Aware Shared Control for Teleoperation Systems: Intent Trajectory Prediction Under Communication Latency"
+        authors:
+          - Jinwei Liu
+          - Pengfei Li
+          - Yaqing Zhou
+          - Tao Wang
+          - Yu Kang
+          - Yun-Bo Zhao
+        publisher: IEEE Internet of Things Journal, Early Access
+        date: 2026
+        url: https://ieeexplore.ieee.org/document/11535330/
+        summary: Journal article on delay-aware shared control for teleoperation systems, using DA-RT to predict operator intent under communication latency.
       - title: "LSTM-MPC: Physically Feasible and Interpretable Trajectory Prediction"
         authors:
           - Jinwei Liu
