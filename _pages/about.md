@@ -60,7 +60,7 @@ I am currently pursuing an M.Eng. degree in Artificial Intelligence at the Unive
   </div>
   <div class="research-interest">
     <span class="research-interest-icon">
-      <i class="fa-solid fa-cubes" aria-hidden="true"></i>
+      <i class="fa-solid fa-person-walking" aria-hidden="true"></i>
     </span>
     <div>
       <strong>Embodied Intelligence</strong>

@@ -78,6 +78,25 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+.profile.profile-compact {
+  picture {
+    display: block;
+    text-align: center;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+.profile.profile-compact.float-right picture {
+  text-align: right;
+}
+
+.profile.profile-compact.float-left picture {
+  text-align: left;
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -86,6 +105,14 @@ ul.task-list input[type="checkbox"] {
       p {
         display: block;
       }
+    }
+  }
+
+  .profile.profile-compact {
+    width: 24%;
+
+    img {
+      width: 100%;
     }
   }
 }
