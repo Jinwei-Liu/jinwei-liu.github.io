@@ -24,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-I am currently pursuing a Ph.D. degree in Control Science and Engineering at the University of Science and Technology of China after transferring from my M.Eng. program into a combined graduate-doctoral track. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
+I am currently pursuing a Ph.D. degree in Control Science and Engineering at the University of Science and Technology of China through 硕转博. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
 
 ## Research Interests
 

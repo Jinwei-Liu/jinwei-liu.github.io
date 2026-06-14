@@ -10,7 +10,7 @@ cv:
 
   sections:
     Profile:
-      - bullet: Ph.D. student in Control Science and Engineering at the University of Science and Technology of China, after transferring from the M.Eng. program into a combined graduate-doctoral track.
+      - bullet: Ph.D. student in Control Science and Engineering at the University of Science and Technology of China through 硕转博.
       - bullet: Research interests include human-machine hybrid intelligence, human-robot interaction, shared autonomy, and embodied intelligence.
       - bullet: Current work focuses on shared control, teleoperation, reinforcement learning, and human-in-the-loop reinforcement learning.
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
@@ -70,6 +70,8 @@ cv:
           - Jinwei Liu
           - Pengfei Li
           - Qianqian Zhang
+          - Yunbo Zhao
+          - Yu Kang
         publisher: International Conference on Guidance, Navigation and Control (ICGNC) 2026
         date: 2026
         summary: Accepted paper on physically feasible and interpretable trajectory prediction via latent MPC parameter estimation.
