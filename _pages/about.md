@@ -88,7 +88,10 @@ I am currently pursuing a Ph.D. degree in Control Science and Engineering at the
 ### University of Science and Technology of China
 
 - Ph.D. in Control Science and Engineering, `Jun 2026 - Present`
-- Combined graduate-doctoral track after master's-to-doctoral transfer
+- 硕转博
+
+### University of Science and Technology of China
+
 - M.Eng. in Artificial Intelligence, `Sep 2024 - Jun 2026`
 - Weighted average: `91.09`
 - GPA: `3.99/4.3`
