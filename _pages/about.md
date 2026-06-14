@@ -10,7 +10,7 @@ profile:
   image_circular: false
   more_info: >
     <p>Jinwei Liu</p>
-    <p>M.Eng. Student in Artificial Intelligence</p>
+    <p>Ph.D. Student in Control Science and Engineering</p>
     <p>University of Science and Technology of China</p>
     <p><a href="mailto:liujinweishandong@outlook.com">liujinweishandong@outlook.com</a></p>
 
@@ -24,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-I am currently pursuing an M.Eng. degree in Artificial Intelligence at the University of Science and Technology of China. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
+I am currently pursuing a Ph.D. degree in Control Science and Engineering at the University of Science and Technology of China after transferring from my M.Eng. program into a combined graduate-doctoral track. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
 
 ## Research Interests
 
@@ -69,13 +69,27 @@ I am currently pursuing an M.Eng. degree in Artificial Intelligence at the Unive
   </div>
 </div>
 
+## Activities
+
+<div class="activity-timeline">
+  <div class="activity-item">
+    <div class="activity-date">Jun 2026 - Present</div>
+    <div class="activity-content">
+      <strong>Embodied Intelligence Algorithm Intern</strong>
+      <p>Dobot, Shanghai, China. Working on embodied intelligence algorithms for robotic systems, with a focus on human-in-the-loop reinforcement learning and adaptive embodied agents.</p>
+    </div>
+  </div>
+</div>
+
 ## Education
 
 <!-- Education is rendered at the bottom of the homepage by the about layout. -->
 
 ### University of Science and Technology of China
 
-- M.Eng. in Artificial Intelligence, `Sep 2024 - Present`
+- Ph.D. in Control Science and Engineering, `Jun 2026 - Present`
+- Combined graduate-doctoral track after master's-to-doctoral transfer
+- M.Eng. in Artificial Intelligence, `Sep 2024 - Jun 2026`
 - Weighted average: `91.09`
 - GPA: `3.99/4.3`
 

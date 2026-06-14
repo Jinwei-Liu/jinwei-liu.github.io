@@ -1,6 +1,6 @@
 cv:
   name: Jinwei Liu
-  headline: M.Eng. Student in Human-Robot Shared Autonomy
+  headline: Ph.D. Student in Control Science and Engineering
   location: Hefei, China
   email: liujinweishandong@outlook.com
   website: https://jinwei-liu.github.io
@@ -10,16 +10,35 @@ cv:
 
   sections:
     Profile:
+      - bullet: Ph.D. student in Control Science and Engineering at the University of Science and Technology of China, after transferring from the M.Eng. program into a combined graduate-doctoral track.
       - bullet: Research interests include human-machine hybrid intelligence, human-robot interaction, shared autonomy, and embodied intelligence.
       - bullet: Current work focuses on shared control, teleoperation, reinforcement learning, and human-in-the-loop reinforcement learning.
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
 
+    Experience:
+      - company: Dobot
+        position: Embodied Intelligence Algorithm Intern
+        start_date: 2026-06
+        end_date: present
+        location: Shanghai, China
+        highlights:
+          - Developing embodied intelligence algorithms for robotic systems.
+          - Working on human-in-the-loop reinforcement learning and adaptive embodied agents.
+
     Education:
+      - institution: University of Science and Technology of China
+        area: Control Science and Engineering
+        degree: Doctor of Philosophy
+        start_date: 2026-06
+        end_date: present
+        location: Hefei, China
+        highlights:
+          - "Combined graduate-doctoral track after master's-to-doctoral transfer"
       - institution: University of Science and Technology of China
         area: Artificial Intelligence
         degree: Master of Engineering
         start_date: 2024-09
-        end_date: present
+        end_date: 2026-06
         location: Hefei, China
         highlights:
           - "Weighted average: 91.09; GPA: 3.99/4.3"

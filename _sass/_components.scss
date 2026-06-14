@@ -169,8 +169,62 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-text-color);
 }
 
+.activity-timeline {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.activity-item {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.25rem;
+  background: var(--global-card-bg-color);
+}
+
+.activity-date {
+  display: inline-flex;
+  min-height: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: var(--global-card-bg-color);
+  background: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.activity-content {
+  strong {
+    display: inline-block;
+    margin-bottom: 0.3rem;
+    color: var(--global-theme-color);
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 .about-education {
   margin-top: 2rem;
+}
+
+@media (max-width: 575.98px) {
+  .activity-item {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-date {
+    justify-self: start;
+  }
 }
 
 @supports not (background: color-mix(in srgb, red 10%, transparent)) {
@@ -213,7 +267,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 .date-column {
-  width: 75px;
+  width: 110px;
   transform: translateX(-15px) translateY(-5px);
 }
 
