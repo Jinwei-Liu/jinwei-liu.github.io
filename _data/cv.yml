@@ -10,7 +10,7 @@ cv:
 
   sections:
     Profile:
-      - bullet: Ph.D. student in Control Science and Engineering at the University of Science and Technology of China through 硕转博.
+      - bullet: Currently in a combined master's-doctoral track in Control Science and Engineering at the University of Science and Technology of China after a master's-to-Ph.D. transfer.
       - bullet: Research interests include human-machine hybrid intelligence, human-robot interaction, shared autonomy, and embodied intelligence.
       - bullet: Current work focuses on shared control, teleoperation, reinforcement learning, and human-in-the-loop reinforcement learning.
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
@@ -33,7 +33,7 @@ cv:
         end_date: present
         location: Hefei, China
         highlights:
-          - "硕转博"
+          - "Master's-to-Ph.D. transfer; combined master's-doctoral track"
       - institution: University of Science and Technology of China
         area: Artificial Intelligence
         degree: Master of Engineering
