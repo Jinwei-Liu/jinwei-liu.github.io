@@ -16,7 +16,8 @@ cv:
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
 
     Experience:
-      - position: Embodied Intelligence Algorithm Intern
+      - company: Robotics Company
+        position: Embodied Intelligence Algorithm Intern
         start_date: 2026-06
         end_date: present
         location: Shanghai, China
