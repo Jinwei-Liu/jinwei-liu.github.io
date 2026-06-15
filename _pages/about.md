@@ -76,7 +76,7 @@ I am currently in a combined master's-doctoral track in Control Science and Engi
     <div class="activity-date">Jun 2026 - Present</div>
     <div class="activity-content">
       <strong>Embodied Intelligence Algorithm Intern</strong>
-      <p>Dobot, Shanghai, China. Working on embodied intelligence algorithms for robotic systems, with a focus on human-in-the-loop reinforcement learning and adaptive embodied agents.</p>
+      <p>Shanghai, China. Working on embodied intelligence algorithms for robotic systems, with a focus on human-in-the-loop reinforcement learning and adaptive embodied agents.</p>
     </div>
   </div>
 </div>
