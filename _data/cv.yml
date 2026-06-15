@@ -21,8 +21,7 @@ cv:
         end_date: present
         location: Shanghai, China
         highlights:
-          - Developing embodied intelligence algorithms for robotic systems.
-          - Working on human-in-the-loop reinforcement learning and adaptive embodied agents.
+          - Embodied Intelligence; Robot Learning; Human-in-the-loop RL
 
     Education:
       - institution: University of Science and Technology of China
