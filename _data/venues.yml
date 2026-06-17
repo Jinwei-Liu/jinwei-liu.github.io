@@ -15,3 +15,7 @@
 "IoTJ":
   url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907
   color: "#00629b"
+
+"IROS":
+  url: https://www.iros2026.org/
+  color: "#2a6fbb"
