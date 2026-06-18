@@ -22,7 +22,7 @@
 
           {% if start_date != '' %}
             {% if start_date contains '-' %}
-              {% assign startDate = start_date | date: '%b %Y' %}
+              {% assign startDate = start_date | date: '%Y.%m' %}
             {% else %}
               {% assign startDate = start_date %}
             {% endif %}
@@ -30,7 +30,7 @@
             {% if end_date == '' or end_date == 'present' or end_date == 'Present' %}
               {% assign endDate = 'Present' %}
             {% elsif end_date contains '-' %}
-              {% assign endDate = end_date | date: '%b %Y' %}
+              {% assign endDate = end_date | date: '%Y.%m' %}
             {% else %}
               {% assign endDate = end_date %}
             {% endif %}

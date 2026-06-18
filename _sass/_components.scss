@@ -119,6 +119,27 @@ ul.task-list input[type="checkbox"] {
 
 // About
 
+.about-content h2,
+.about-section-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid color-mix(in srgb, var(--global-divider-color) 80%, transparent);
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.about-section-heading a {
+  color: inherit;
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
 .research-interests {
   display: grid;
   gap: 1rem;
@@ -161,8 +182,6 @@ ul.task-list input[type="checkbox"] {
   }
 
   p {
-    padding-top: 0.55rem;
-    border-top: 1px solid color-mix(in srgb, var(--global-divider-color) 70%, transparent);
     margin: 0;
   }
 }
@@ -237,10 +256,6 @@ ul.task-list input[type="checkbox"] {
 
     strong {
       background: rgba(128, 128, 128, 0.12);
-    }
-
-    p {
-      border-top-color: rgba(128, 128, 128, 0.22);
     }
   }
 }

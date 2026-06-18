@@ -30,8 +30,6 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 
 ## Research Interests
 
-**Research Mission:** Building human-centered intelligent systems that understand human intent, communicate machine behavior, and learn to collaborate safely in real-world tasks.
-
 <div class="research-interests">
   <div class="research-interest">
     <span class="research-interest-icon">
@@ -75,7 +73,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 
 <div class="activity-timeline">
   <div class="activity-item">
-    <div class="activity-date">Jun 2026 - Present</div>
+    <div class="activity-date">2026.06 - Present</div>
     <div class="activity-content">
       <strong>Embodied Intelligence Algorithm Intern</strong>
       <p>Shanghai, China. Embodied Intelligence, Robot Learning, Human-in-the-loop RL.</p>
@@ -89,18 +87,18 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 
 ### University of Science and Technology of China
 
-- Ph.D. in Control Science and Engineering, `Jun 2026 - Present`
+- Ph.D. in Control Science and Engineering, `2026.06 - Present`
 - Master's-to-Ph.D. transfer; combined master's-doctoral track
 
 ### University of Science and Technology of China
 
-- M.Eng. in Artificial Intelligence, `Sep 2024 - Jun 2026`
+- M.Eng. in Artificial Intelligence, `2024.09 - 2026.06`
 - Weighted average: `91.09`
 - GPA: `3.99/4.3`
 
 ### Ocean University of China
 
-- B.Eng. in Automation, `Sep 2020 - Jun 2024`
+- B.Eng. in Automation, `2020.09 - 2024.06`
 - Rank: `1/89`
 - Weighted average: `92.42`
 - GPA: `3.82/4.0`

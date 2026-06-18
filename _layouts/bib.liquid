@@ -162,11 +162,38 @@
     {% endif %}
     {% assign entrymonth = '' %}
     {% if entry.month %}
-      {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
+      {% assign month_raw = entry.month | downcase | strip %}
+      {% if month_raw == 'jan' or month_raw == 'january' or month_raw == '1' or month_raw == '01' %}
+        {% assign entrymonth = '01' %}
+      {% elsif month_raw == 'feb' or month_raw == 'february' or month_raw == '2' or month_raw == '02' %}
+        {% assign entrymonth = '02' %}
+      {% elsif month_raw == 'mar' or month_raw == 'march' or month_raw == '3' or month_raw == '03' %}
+        {% assign entrymonth = '03' %}
+      {% elsif month_raw == 'apr' or month_raw == 'april' or month_raw == '4' or month_raw == '04' %}
+        {% assign entrymonth = '04' %}
+      {% elsif month_raw == 'may' or month_raw == '5' or month_raw == '05' %}
+        {% assign entrymonth = '05' %}
+      {% elsif month_raw == 'jun' or month_raw == 'june' or month_raw == '6' or month_raw == '06' %}
+        {% assign entrymonth = '06' %}
+      {% elsif month_raw == 'jul' or month_raw == 'july' or month_raw == '7' or month_raw == '07' %}
+        {% assign entrymonth = '07' %}
+      {% elsif month_raw == 'aug' or month_raw == 'august' or month_raw == '8' or month_raw == '08' %}
+        {% assign entrymonth = '08' %}
+      {% elsif month_raw == 'sep' or month_raw == 'sept' or month_raw == 'september' or month_raw == '9' or month_raw == '09' %}
+        {% assign entrymonth = '09' %}
+      {% elsif month_raw == 'oct' or month_raw == 'october' or month_raw == '10' %}
+        {% assign entrymonth = '10' %}
+      {% elsif month_raw == 'nov' or month_raw == 'november' or month_raw == '11' %}
+        {% assign entrymonth = '11' %}
+      {% elsif month_raw == 'dec' or month_raw == 'december' or month_raw == '12' %}
+        {% assign entrymonth = '12' %}
+      {% else %}
+        {% assign entrymonth = entry.month | strip %}
+      {% endif %}
     {% endif %}
     {% assign entryyear = '' %}
     {% if entry.year %}
-      {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
+      {% assign entryyear = entry.year | strip %}
     {% endif %}
     {% if entry.location %}
       {% capture entrytype %}{{ entrytype }}{{ ", " }}{{ entry.location }}{% endcapture %}
@@ -179,7 +206,13 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% assign entrydate = '' %}
+    {% if entryyear != '' and entrymonth != '' %}
+      {% capture entrydate %}{{ entryyear }}.{{ entrymonth }}{% endcapture %}
+    {% elsif entryyear != '' %}
+      {% assign entrydate = entryyear %}
+    {% endif %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != '' and entrydate != '' %}, {% endif %}{{ entrydate }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
