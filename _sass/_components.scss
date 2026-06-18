@@ -142,52 +142,46 @@ ul.task-list input[type="checkbox"] {
 
 .research-interests {
   display: grid;
-  gap: 1rem;
-  margin: 1rem 0 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem 1.2rem;
+  margin: 1rem 0 1.6rem;
 }
 
 .research-interest {
   display: grid;
-  grid-template-columns: 2.4rem 1fr;
-  gap: 0.75rem;
+  grid-template-columns: 1.35rem 1fr;
+  gap: 0.65rem;
   align-items: start;
-  padding: 0.75rem;
-  border: 1px solid var(--global-divider-color);
-  border-radius: 0.25rem;
-  background: var(--global-card-bg-color);
+  padding: 0.25rem 0 0.85rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--global-divider-color) 60%, transparent);
 
   .research-interest-icon {
     display: inline-flex;
-    width: 2.4rem;
-    height: 2.4rem;
+    width: 1.35rem;
+    height: 1.35rem;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    color: var(--global-card-bg-color);
-    background: var(--global-theme-color);
-    box-shadow: 0 0 0 3px color-mix(in srgb, var(--global-theme-color) 16%, transparent);
+    margin-top: 0.1rem;
+    color: var(--global-theme-color);
   }
 
   i {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   strong {
     display: inline-block;
-    margin-bottom: 0.3rem;
-    padding: 0.18rem 0.45rem;
-    border-radius: 0.25rem;
+    margin-bottom: 0.2rem;
     color: var(--global-theme-color);
-    background: color-mix(in srgb, var(--global-theme-color) 9%, transparent);
+    font-size: 0.98rem;
+    font-weight: 600;
   }
 
   p {
     margin: 0;
+    color: var(--global-text-color-light);
+    line-height: 1.45;
   }
-}
-
-.research-arrow {
-  color: var(--global-text-color);
 }
 
 .activity-timeline {
@@ -239,6 +233,10 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media (max-width: 575.98px) {
+  .research-interests {
+    grid-template-columns: 1fr;
+  }
+
   .activity-item {
     grid-template-columns: 1fr;
   }
@@ -250,13 +248,7 @@ ul.task-list input[type="checkbox"] {
 
 @supports not (background: color-mix(in srgb, red 10%, transparent)) {
   .research-interest {
-    .research-interest-icon {
-      box-shadow: 0 0 0 3px rgba(128, 128, 128, 0.16);
-    }
-
-    strong {
-      background: rgba(128, 128, 128, 0.12);
-    }
+    border-bottom-color: rgba(128, 128, 128, 0.22);
   }
 }
 

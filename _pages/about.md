@@ -36,7 +36,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
       <i class="fa-solid fa-brain" aria-hidden="true"></i>
     </span>
     <div>
-      <strong><span class="research-arrow">Human → Machine</span> Intent Understanding</strong>
+      <strong>Human Intent Understanding</strong>
       <p>User modeling, intent inference, trajectory prediction, and shared autonomy.</p>
     </div>
   </div>
@@ -45,7 +45,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
       <i class="fa-solid fa-robot" aria-hidden="true"></i>
     </span>
     <div>
-      <strong><span class="research-arrow">Machine → Human</span> Legible Interaction</strong>
+      <strong>Legible Robot Interaction</strong>
       <p>Robot motion legibility, implicit communication, belief expression, and agency-preserving assistance.</p>
     </div>
   </div>
@@ -55,7 +55,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
     </span>
     <div>
       <strong>Reinforcement Learning & Intelligent Control</strong>
-      <p>Learning-based control, uncertainty-aware intervention, reinforcement learning, and MPC.</p>
+      <p>Human-in-the-loop reinforcement learning, adaptive intervention, learning-based control, and MPC.</p>
     </div>
   </div>
   <div class="research-interest">
@@ -76,7 +76,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
     <div class="activity-date">2026.06 - Present</div>
     <div class="activity-content">
       <strong>Embodied Intelligence Algorithm Intern</strong>
-      <p>Shanghai, China. Embodied Intelligence, Robot Learning, Human-in-the-loop RL.</p>
+      <p>Dobot, Shanghai, China.</p>
     </div>
   </div>
 </div>

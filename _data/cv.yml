@@ -17,13 +17,11 @@ cv:
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.
 
     Experience:
-      - company: Robotics Company
+      - company: Dobot
         position: Embodied Intelligence Algorithm Intern
         start_date: 2026-06
         end_date: present
         location: Shanghai, China
-        highlights:
-          - Embodied Intelligence; Robot Learning; Human-in-the-loop RL
 
     Education:
       - institution: University of Science and Technology of China
