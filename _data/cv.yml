@@ -10,7 +10,8 @@ cv:
 
   sections:
     Profile:
-      - bullet: Currently in a combined master's-doctoral track in Control Science and Engineering at the University of Science and Technology of China after a master's-to-Ph.D. transfer.
+      - bullet: Ph.D. student in Control Science and Engineering at the University of Science and Technology of China through a master's-to-Ph.D. transfer, advised by Prof. Yun-Bo Zhao in the Networked Intelligent Control Lab (NICLab).
+      - bullet: During my master's study, I worked with Prof. Pengfei Li.
       - bullet: Research interests include human-machine hybrid intelligence, human-robot interaction, shared autonomy, and embodied intelligence.
       - bullet: Current work focuses on shared control, teleoperation, reinforcement learning, and human-in-the-loop reinforcement learning.
       - bullet: Interested in both human-to-machine intent communication and machine-to-human information expression.

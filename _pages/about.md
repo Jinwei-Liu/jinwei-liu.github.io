@@ -24,7 +24,9 @@ latest_posts:
   enabled: false
 ---
 
-I am currently in a combined master's-doctoral track in Control Science and Engineering at the University of Science and Technology of China after a master's-to-Ph.D. transfer. My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, adaptive assistance, and safe, natural collaboration.
+Hi there! This is Jinwei Liu. You can call me Kenway. I am currently a Ph.D. student in Control Science and Engineering at the University of Science and Technology of China through a master's-to-Ph.D. transfer, advised by Prof. <a href="https://www.niclab.ac.cn/members/%E8%B5%B5%E4%BA%91%E6%B3%A2/" target="_blank">Yun-Bo Zhao</a> in the <a href="https://www.niclab.ac.cn/" target="_blank">Networked Intelligent Control Lab (NICLab)</a>.
+
+My research focuses on hybrid intelligence and shared autonomy in human interaction with machines, robots, and AI systems, with an emphasis on real-time intent inference, legible robot behavior, adaptive assistance, and safe, natural collaboration. During my master's study, I worked with Prof. <a href="https://faculty.ustc.edu.cn/pfli/zh_CN/index.htm" target="_blank">Pengfei Li</a>.
 
 ## Research Interests
 
