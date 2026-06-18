@@ -245,6 +245,24 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+.news table {
+  width: 100%;
+}
+
+.news-date {
+  width: 5.5rem;
+  min-width: 5.5rem;
+  padding-right: 0.5rem;
+  white-space: nowrap;
+  color: var(--global-theme-color);
+  font-weight: 700;
+  vertical-align: top;
+}
+
+.news-content {
+  padding-left: 0.25rem;
+}
+
 .about-education {
   margin-top: 2rem;
 
