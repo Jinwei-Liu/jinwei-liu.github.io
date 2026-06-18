@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China</a>. Hefei, China. Hybrid Intelligence and Shared Autonomy in Human-Machine, Human-Robot, and Human-AI Systems.
 
