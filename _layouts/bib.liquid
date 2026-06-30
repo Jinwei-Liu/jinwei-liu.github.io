@@ -239,7 +239,7 @@
       {% if entry.hal %}
         <a href="https://hal.science/{{ entry.hal }}" class="btn btn-sm z-depth-0" role="button">HAL</a>
       {% endif %}
-      {% if entry.bibtex_show %}
+      {% if entry.bibtex_show == true or entry.bibtex_show == 'true' %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
       {% endif %}
       {% if entry.html %}
@@ -409,7 +409,7 @@
       </div>
     {% endif %}
 
-    {% if entry.bibtex_show %}
+    {% if entry.bibtex_show == true or entry.bibtex_show == 'true' %}
       <!-- Hidden bibtex block -->
       <div class="bibtex hidden">
         {% highlight bibtex %}
