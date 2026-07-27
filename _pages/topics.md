@@ -10,10 +10,10 @@ nav_order: 2
 <section class="topic-section topic-intro">
   <h2>Research Vision</h2>
   <p>
-    Human-machine relationships are changing as tools become more intelligent. Traditional tools mainly extend human physical capability under direct control; intelligent tools, robots, and AI systems can now sense context, infer intent, make decisions, and act with partial autonomy. This shift turns tool use into interaction: people no longer only operate machines, but also negotiate control, trust, and responsibility with systems that actively participate in the task.
+    The relationship between humans and tools has evolved as tools become more intelligent: from objects that are directly used, to machines that amplify physical capability, and further to robots and AI systems that can sense context, infer intent, make decisions, and act with partial autonomy. Along this progression, tool use gradually becomes interaction: people no longer only operate tools, but also negotiate control, trust, and responsibility with intelligent systems that actively participate in the task.
   </p>
   <p>
-    This growing tool intelligence makes human agency, transparency, and collaboration central research problems. In this context, my work studies how machines can understand human intent, how their internal beliefs and assistance can be communicated back to users, and how shared autonomy and human-in-the-loop learning can support safe, natural human-machine collaboration.
+    This growing tool intelligence makes human agency, transparency, and collaboration central research problems. In this context, my work studies how machines can understand human intent, how their internal beliefs and assistance can be communicated back to users, and how shared autonomy and human-in-the-loop learning can support safe, natural human-tool collaboration.
   </p>
 </section>
 
