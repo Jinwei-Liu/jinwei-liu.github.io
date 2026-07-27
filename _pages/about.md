@@ -30,42 +30,49 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 ## Research Interests
 
 <div class="research-interests">
-  <div class="research-interest">
-    <span class="research-interest-icon">
-      <i class="fa-solid fa-brain" aria-hidden="true"></i>
-    </span>
-    <div>
-      <strong><span class="research-arrow">Human → Machine</span> Intent Understanding</strong>
-      <p>User modeling, intent inference, trajectory prediction, and shared autonomy.</p>
+  <section class="research-interest-group">
+    <div class="research-interest-group-heading">
+      <span class="research-interest-icon">
+        <i class="fa-solid fa-person-walking" aria-hidden="true"></i>
+      </span>
+      <div>
+        <h3>Human-Augmented Machines</h3>
+        <p>Human guidance improves how embodied and intelligent systems learn, adapt, and intervene under uncertainty.</p>
+      </div>
     </div>
-  </div>
-  <div class="research-interest">
-    <span class="research-interest-icon">
-      <i class="fa-solid fa-robot" aria-hidden="true"></i>
-    </span>
-    <div>
-      <strong><span class="research-arrow">Machine → Human</span> Legible Interaction</strong>
-      <p>Robot motion legibility, implicit communication, belief expression, and agency-preserving assistance.</p>
+    <div class="research-interest-items">
+      <div class="research-interest-item">
+        <strong>Embodied Intelligence</strong>
+        <p>Human-in-the-loop imitation learning and human-in-the-loop reinforcement learning.</p>
+      </div>
+      <div class="research-interest-item">
+        <strong>Intelligent Control</strong>
+        <p>Learning-based control, uncertainty-aware intervention, reinforcement learning, and MPC.</p>
+      </div>
     </div>
-  </div>
-  <div class="research-interest">
-    <span class="research-interest-icon">
-      <i class="fa-solid fa-bullseye" aria-hidden="true"></i>
-    </span>
-    <div>
-      <strong>Reinforcement Learning & Intelligent Control</strong>
-      <p>Learning-based control, uncertainty-aware intervention, reinforcement learning, and MPC.</p>
+  </section>
+
+  <section class="research-interest-group">
+    <div class="research-interest-group-heading">
+      <span class="research-interest-icon">
+        <i class="fa-solid fa-robot" aria-hidden="true"></i>
+      </span>
+      <div>
+        <h3>Machine-Assisted Humans</h3>
+        <p>Intelligent systems assist people by understanding human intent and communicating their own assistance behavior.</p>
+      </div>
     </div>
-  </div>
-  <div class="research-interest">
-    <span class="research-interest-icon">
-      <i class="fa-solid fa-person-walking" aria-hidden="true"></i>
-    </span>
-    <div>
-      <strong>Embodied Intelligence</strong>
-      <p>Human-in-the-loop reinforcement learning for adaptive embodied agents.</p>
+    <div class="research-interest-items">
+      <div class="research-interest-item">
+        <strong><span class="research-arrow">Human &rarr; Machine</span> Intent Understanding</strong>
+        <p>User modeling, intent inference, trajectory prediction, and shared autonomy.</p>
+      </div>
+      <div class="research-interest-item">
+        <strong><span class="research-arrow">Machine &rarr; Human</span> Legible Interaction</strong>
+        <p>Robot motion legibility, implicit communication, belief expression, and agency-preserving assistance.</p>
+      </div>
     </div>
-  </div>
+  </section>
 </div>
 
 ## Activities
