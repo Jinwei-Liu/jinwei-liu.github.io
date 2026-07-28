@@ -7,6 +7,8 @@ cv:
   social_networks:
     - network: GitHub
       username: Jinwei-Liu
+    - network: LinkedIn
+      username: jinwei-liu-858702376
 
   sections:
     Profile:
