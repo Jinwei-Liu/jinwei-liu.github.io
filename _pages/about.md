@@ -79,10 +79,17 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 
 <div class="activity-timeline">
   <div class="activity-item">
-    <div class="activity-date">2026.06 - Present</div>
+    <div class="activity-date">2026.06 - 2026.08</div>
     <div class="activity-content">
       <strong>Embodied Intelligence Algorithm Intern</strong>
       <p>Dobot, Shanghai, China.</p>
+    </div>
+  </div>
+  <div class="activity-item">
+    <div class="activity-date">2026.08</div>
+    <div class="activity-content">
+      <strong>Wearable Robot Challenge Participant</strong>
+      <p>Busan, South Korea.</p>
     </div>
   </div>
 </div>
