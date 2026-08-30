@@ -88,7 +88,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
   <div class="activity-item">
     <div class="activity-date">2026.08</div>
     <div class="activity-content">
-      <strong>Wearable Robot Challenge Participant</strong>
+      <strong><a href="{{ '/assets/ppt/CoMotion.pptx' | relative_url }}" target="_blank" rel="noopener">Wearable Robot Challenge Participant</a></strong>
       <p>Busan, South Korea.</p>
     </div>
   </div>
@@ -117,3 +117,4 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 - GPA: `3.82/4.0`
 - National Scholarship (twice)
 - Honorary Bachelor's Degree of Ocean University of China
+
