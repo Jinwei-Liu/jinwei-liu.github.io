@@ -61,7 +61,7 @@ cv:
           - Tao Wang
           - Yu Kang
           - Yun-Bo Zhao
-        publisher: IEEE Internet of Things Journal, Early Access
+        publisher: IEEE Internet of Things Journal, vol. 13, no. 15, pp. 35346-35358
         date: 2026
         url: https://ieeexplore.ieee.org/document/11535330/
         summary: Journal article on delay-aware shared control for teleoperation systems, using DA-RT to predict operator intent under communication latency.
