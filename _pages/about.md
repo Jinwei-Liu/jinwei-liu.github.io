@@ -108,6 +108,7 @@ My research focuses on hybrid intelligence and shared autonomy in human interact
 - M.Eng. in Artificial Intelligence, `2024.09 - 2026.06`
 - Weighted average: `91.09`
 - GPA: `3.99/4.3`
+- National Scholarship
 
 ### Ocean University of China
 
